@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HomeWork 10 | Registration</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main class="content">
+
+        <form class="form-reg content__form-reg">
+
+            <h1 class="form-reg__title">Регистрация</h1>
+
+            <label class="label form-reg__label-email" for="email" id="label-email">Email</label>
+                <div class="form-reg__container-label-email">
+                    <div class="star form-reg__star-email" id="star-email">*</div>
+                    <input class="input form-reg__input-email" type="email" id="email" placeholder="Введите email">
+                </div>
+            <label hidden class="form-reg__text-error" id="email-error">Поле обязательно для заполнения</label>
+
+            <label class="label form-reg__label-password" for="password" id="label-password">Пароль</label>
+                <div class="form-reg__container-label-password">
+                    <div class="star form-reg__star-password" id="star-password">*</div>
+                    <input class="input form-reg__input-password" type="password" id="password" placeholder="Введите пароль" autocomplete="on">
+                </div>
+            <label hidden class="form-reg__text-error form-reg__text-error_password" id="password-error">Поле обязательно для заполнения</label>
+
+            <div class="form-reg__container-checkbox">
+                    <div class="star form-reg__star-checkbox" id="star-checkbox">*</div>
+                    <div class="form-reg__checkbox-wrapper">
+                    <input class="form-reg__checkbox" type="checkbox" id="checkbox">
+                    <div class="form-reg__checkbox-mark" id="checkbox-mark"></div>
+                    <label class="form-reg__label-checkbox" for="checkbox">Я согласен c <a href="https://policies.google.com/terms?hl=ru" class="form-reg__checkbox-link-container">Правилами пользования приложением</a></label>
+                </div>
+            </div>
+            <label hidden class="form-reg__text-error form-reg__text-error_checkbox" id="checkbox-error">Поле обязательно для заполнения</label>
+
+            <button class="btn form-reg__btn" id="btn">Регистрация</button>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer></footer>
+
+</body>
+
+</html>
+
